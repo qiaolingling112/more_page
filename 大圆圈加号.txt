@@ -1,0 +1,16 @@
+.uni-addTask-o {
+	width:120upx;height:120upx;
+	line-height:120upx;
+	text-align: center;
+	font-size: 120upx;
+	padding:20upx;
+	border-radius:50%;
+	border:2upx solid #1296DB;
+	background: #1296DB;
+	color:#fff;
+	opacity: 0.5;
+	position:absolute;
+	top:880upx;right:20upx;
+	bottom:40upx;
+	z-index: 99;
+}
