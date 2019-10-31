@@ -1,0 +1,74 @@
+<template>
+	<view>
+		<button type="primary" size="mini" class="add">增加</button>
+		<view class="form_header">
+			<view class="num" v-for="(item,index) in headerlist" :key="index">{{item.name}}</view>
+		</view>
+		<view class="content"  v-for="(team,index) in productlist" :key="index">
+			<view>{{team.id}}</view>
+			<view>{{team.img}}</view>
+			<view>{{team.pname}}</view>
+			<view>{{team.num}}</view>
+			<view>{{team.model}}</view>
+			<view>{{team.brand}}</view>
+			<view>{{team.remark}}</view>
+		</view>
+		<!-- <form @submit="" @reset="">
+			
+			<button form-type="submit">Submit</button>
+			<button form-type="reset">Reset</button>
+		</form> -->
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				headerlist:[{name:'序号'},{name:'图片'},{name:'名称'},{name:'数量'},{name:'型号'},{name:'品牌'},{name:'备注'}],
+				productlist:[
+					{id:1,img:'',pname:'手机',num:5,model:'xiaomi6',brand:'小米',remark:'待退货的'},
+					{id:2,img:'',pname:'打印机',num:6,model:'xiaomi6',brand:'小米',remark:'待退货的'},
+					{id:3,img:'',pname:'水杯',num:3,model:'xiaomi6',brand:'小米',remark:'待退货的'},
+					{id:4,img:'',pname:'遥控',num:1,model:'xiaomi6',brand:'小米',remark:'待退货的'},
+					{id:5,img:'',pname:'监控',num:0,model:'xiaomi6',brand:'小米',remark:'待退货的'},
+					{id:6,img:'',pname:'插座',num:8,model:'xiaomi6',brand:'小米',remark:'待退货的'},
+				]
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+	.add{
+		margin-left:20rpx;
+		width:20%;height:80rpx;
+		line-height:80rpx;
+		font-size: 24rpx;
+	}
+	.form_header,.content{
+		width:100%;height:80rpx;
+		margin:20rpx auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: center;
+		text-align: center;
+		border-bottom: 2rpx solid #F1F1F1;
+	}
+	.form_header .num,.content view{
+		width:20%;height:80rpx;
+		line-height: 80rpx;
+		padding:5px;
+		border-right:2rpx solid #999;
+		border-bottom:2rpx solid #999;
+		background:#F1F1F1;
+	}
+	.content view{
+		background: #FFFFFF;
+		overflow: scroll;
+	}
+</style>
