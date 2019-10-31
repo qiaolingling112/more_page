@@ -1,0 +1,25 @@
+.swiper-item .mes{
+	font-size:24rpx;
+	color:#000;
+	border:2rpx solid #000;
+	border-radius: 16rpx;
+	width:80%;height:500rpx;
+	text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.swiper-item .mes ._tr{
+  height:20rpx;
+  width: 100%
+}
+.swiper-item .mes ._tr ._th,.swiper-item .mes ._tr ._td{
+  width:50%;height:20rpx;
+  float: left
+}
+.swiper-item image {
+	height: 100%;width: 100%;
+}
